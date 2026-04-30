@@ -17,7 +17,7 @@ flex-direction:column;
 min-height:100vh;
 }
 
-
+/* HEADER */
 header{
 background:black;
 text-align:center;
@@ -34,7 +34,7 @@ header p{
 color:lightgray;
 }
 
-
+/* NAV */
 nav{
 background:#1a1a1a;
 display:flex;
@@ -48,12 +48,14 @@ nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
+padding:10px;
 }
 
 nav a:hover{
 color:gray;
 }
 
+/* MAIN */
 main{
 flex:1;
 display:flex;
@@ -61,10 +63,10 @@ justify-content:center;
 flex-wrap:wrap;
 gap:25px;
 padding:40px;
-background:#3a3a3a;
+background:#111; /* fixed (was too gray) */
 }
 
-
+/* CARDS */
 .card{
 background:#1f1f1f;
 width:260px;
@@ -84,16 +86,17 @@ transform:translateY(-8px);
 margin-top:0;
 }
 
-
+/* BUTTON */
 button{
 background:white;
 color:black;
 border:none;
-padding:10px 18px;
+padding:12px 20px;
 margin-top:10px;
 border-radius:5px;
 cursor:pointer;
 font-weight:bold;
+font-size:16px;
 }
 
 button:hover{
@@ -101,6 +104,7 @@ background:gray;
 color:white;
 }
 
+/* FOOTER */
 footer{
 background:black;
 text-align:center;
@@ -109,23 +113,40 @@ border-top:1px solid gray;
 color:lightgray;
 }
 
-
+/* MOBILE FIXES */
 @media (max-width:768px){
+
+header{
+padding:25px 15px;
+}
 
 nav{
 flex-direction:column;
 align-items:center;
-gap:10px;
+gap:8px;
+padding:10px;
+}
+
+nav a{
+width:100%;
+text-align:center;
+border-bottom:1px solid #333;
+}
+
+nav a:last-child{
+border-bottom:none;
 }
 
 main{
 flex-direction:column;
 align-items:center;
+padding:20px;
 }
 
 .card{
 width:90%;
 max-width:320px;
+padding:20px;
 }
 
 }
