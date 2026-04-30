@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robolex Luxury Watches</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#111;
+color:white;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+
+header{
+background:black;
+text-align:center;
+padding:40px 20px;
+border-bottom:1px solid gray;
+}
+
+header h1{
+margin:0;
+letter-spacing:3px;
+}
+
+header p{
+color:lightgray;
+}
+
+
+nav{
+background:#1a1a1a;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:15px;
+border-bottom:1px solid gray;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:gray;
+}
+
+main{
+flex:1;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:40px;
+}
+
+
+.card{
+background:#1f1f1f;
+width:260px;
+padding:25px;
+text-align:center;
+border-radius:10px;
+border:1px solid gray;
+box-shadow:0 4px 10px rgba(0,0,0,0.5);
+transition:transform 0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h2{
+margin-top:0;
+}
+
+
+button{
+background:white;
+color:black;
+border:none;
+padding:10px 18px;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:gray;
+color:white;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:15px;
+border-top:1px solid gray;
+color:lightgray;
+}
+
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+main{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+max-width:320px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ROLEX COLLECTION</h1>
+<p>Timeless Luxury Watches</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Collection</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<main>
+
+<section class="card">
+<h2>Submariner</h2>
+<p>The Rolex Submariner is a legendary dive watch known for its durability and timeless design.</p>
+<button>View Watch</button>
+</section>
+
+<section class="card">
+<h2>Daytona</h2>
+<p>The Cosmograph Daytona is designed for professional racing drivers and combines elegance with performance.</p>
+<button>View Watch</button>
+</section>
+
+<section class="card">
+<h2>Datejust</h2>
+<p>The Datejust represents classic Rolex style with precision and luxury craftsmanship.</p>
+<button>View Watch</button>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Rolex Inspired Website</p>
+</footer>
+
+</body>
+</html>
